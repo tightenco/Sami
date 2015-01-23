@@ -11,18 +11,18 @@
 
 namespace Sami\Parser;
 
-use PhpParser\Node as AbstractNode;
-use PhpParser\NodeVisitorAbstract;
-use PhpParser\Node\Stmt as StmtNode;
-use PhpParser\Node\Stmt\ClassConst as ClassConstNode;
-use PhpParser\Node\Stmt\ClassMethod as ClassMethodNode;
-use PhpParser\Node\Stmt\Class_ as ClassNode;
-use PhpParser\Node\Stmt\Interface_ as InterfaceNode;
-use PhpParser\Node\Stmt\Namespace_ as NamespaceNode;
-use PhpParser\Node\Stmt\Property as PropertyNode;
-use PhpParser\Node\Stmt\TraitUse as TraitUseNode;
-use PhpParser\Node\Stmt\Trait_ as TraitNode;
-use PhpParser\Node\Stmt\Use_ as UseNode;
+use PHPParser_Node as AbstractNode;
+use PHPParser_NodeVisitorAbstract as NodeVisitorAbstract;
+use PHPParser_Node_Stmt as StmtNode;
+use PHPParser_Node_Stmt_ClassConst as ClassConstNode;
+use PHPParser_Node_Stmt_ClassMethod as ClassMethodNode;
+use PHPParser_Node_Stmt_Class as ClassNode;
+use PHPParser_Node_Stmt_Interface as InterfaceNode;
+use PHPParser_Node_Stmt_Namespace as NamespaceNode;
+use PHPParser_Node_Stmt_Property as PropertyNode;
+use PHPParser_Node_Stmt_TraitUse as TraitUseNode;
+use PHPParser_Node_Stmt_Trait as TraitNode;
+use PHPParser_Node_Stmt_Use as UseNode;
 use Sami\Project;
 use Sami\Reflection\ClassReflection;
 use Sami\Reflection\ConstantReflection;

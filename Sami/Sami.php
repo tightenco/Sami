@@ -11,11 +11,12 @@
 
 namespace Sami;
 
-use PhpParser\Lexer;
-use PhpParser\NodeTraverser;
-use PhpParser\NodeVisitor\NameResolver;
-use PhpParser\Parser as PhpParser;
-use PhpParser\PrettyPrinter\Standard as PrettyPrinter;
+use PHPParser_Lexer as Lexer;
+use PHPParser_NodeTraverser as NodeTraverser;
+use PHPParser_NodeVisitor_NameResolver as NameResolver;
+use PHPParser_Parser as PhpParser;
+use PHPParser_PrettyPrinter_Default as PrettyPrinter;
+// use PhpParser\PrettyPrinter\Standard as PrettyPrinter;
 use Pimple\Container;
 use Sami\Parser\ClassTraverser;
 use Sami\Parser\ClassVisitor;

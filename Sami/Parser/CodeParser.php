@@ -11,9 +11,9 @@
 
 namespace Sami\Parser;
 
-use PhpParser\Error;
-use PhpParser\NodeTraverser;
-use PhpParser\Parser as PhpParser;
+use PHPParser_Error as Error;
+use PHPParser_NodeTraverser as NodeTraverser;
+use PHPParser_Parser as PHPParser;
 
 class CodeParser
 {
@@ -21,7 +21,7 @@ class CodeParser
     protected $traverser;
     protected $context;
 
-    public function __construct(ParserContext $context, PhpParser $parser, NodeTraverser $traverser)
+    public function __construct(ParserContext $context, PHPParser $parser, NodeTraverser $traverser)
     {
         $this->context = $context;
         $this->parser = $parser;
