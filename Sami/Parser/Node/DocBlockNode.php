@@ -31,7 +31,7 @@ class DocBlockNode
     public function getOtherTags()
     {
         $tags = $this->tags;
-        unset($tags['param'], $tags['return'], $tags['var'], $tags['throws']);
+        unset($tags['param'], $tags['return'], $tags['var'], $tags['throws'], $tags['throw']);
 
         foreach ($tags as $name => $values) {
             foreach ($values as $i => $value) {

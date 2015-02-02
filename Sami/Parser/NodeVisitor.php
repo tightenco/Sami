@@ -170,7 +170,8 @@ class NodeVisitor extends NodeVisitorAbstract
                     $method->setHintDesc($tag[0][1]);
                 }
 
-                $method->setExceptions($comment->getTag('throws'));
+                $throwsTags = array_merge($comment->getTag('throws'), $comment->getTag('throw'));
+                $method->setExceptions($throwsTags);
                 $method->setTags($comment->getOtherTags());
             }
 
